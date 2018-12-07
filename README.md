@@ -1,4 +1,6 @@
 # membership_php_version
+
+![alt text](http://manna-network.com/images3.jpeg "Logo Title Text 1")
 The PHP script for the membership participation level 
 
 The "membership level" is the simplest and least resource intensive entry point to the income earning levels of The Manna Network. This PHP Version is one of TWO membership level versions (the other version being a WordPress Plugin Version for use on the Wordpress platform). 
