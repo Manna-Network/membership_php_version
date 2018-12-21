@@ -11,7 +11,7 @@
                      <div class="acc-section">
 				<div style="text-align: center;">
 				
-<iframe src="https://<?php echo $agent_url."/". $agent_folder;?>/members/register.php?referer_lnk_num=<?php echo $_GET['lnk_num'];?>&remote_server=<?php echo $_SERVER['HTTP_HOST'];?>" width="100%" height="750"]
+<iframe src="https://<?php echo $agent_url."/". $registration_folder;?>/members/register.php?referer_lnk_num=<?php echo $_GET['lnk_num'];?>&remote_server=<?php echo $_SERVER['HTTP_HOST'];?>" width="100%" height="750"]
 		</iframe>				
 </div> 
 
