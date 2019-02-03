@@ -14,7 +14,7 @@ echo '<br> url to send = ', $url;
 $args = array(
 'http_host' =>   $_SERVER['HTTP_HOST']
 );
-$file="http://".$agent_url."/".$agent_link_folder.'/wp_errors/no_link_id.php';
+$file="http://".$agent_url."/".$agent_folder.'/wp_errors/no_link_id.php';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $file);
 curl_setopt($ch, CURLOPT_POSTFIELDS,$args);
