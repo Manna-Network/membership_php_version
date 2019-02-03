@@ -119,7 +119,7 @@ $args = array(
 
 $handle = curl_init();
 $url1 = "http://".$agent_url."/".$agent_folder."/get_category_json.php";
-echo $url1;
+
 // Set the url
 curl_setopt($handle, CURLOPT_URL, $url1);
 curl_setopt($handle, CURLOPT_POSTFIELDS,$args);
