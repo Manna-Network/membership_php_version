@@ -7,6 +7,27 @@ include("translations/en.js");
 //verify that the lnk (i.e link) number above is yours to insure your lnk credit and payments
 //change the above text "change_me" to your lnk_number. You should have gotten an email containing it. If you lost it you can retrieve it by logging in at BungeeBones.com/members 
 include('member_config.php');
+//now we will put in a new check to make sure they changed their link_num
+if ($lnk_num == "change_me" OR $lnk_num==""){
+$url = $_SERVER['SERVER_NAME'];
+echo '<br> url to send = ', $url;
+$args = array(
+'http_host' =>   $_SERVER['HTTP_HOST']
+);
+$file="http://".$agent_url."/".$agent_link_folder.'/wp_errors/no_link_id.php';
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $file);
+curl_setopt($ch, CURLOPT_POSTFIELDS,$args);
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+$data = curl_exec($ch);
+curl_close($ch);
+echo($data);
+exit();
+}
+
+
+
 $category_id = '';
 $cat_page_num = '';
 $link_page_num = '';
